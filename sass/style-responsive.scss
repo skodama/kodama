@@ -1,4 +1,159 @@
-/*petseacheye style*/
+/*petseacheye responsive style*/
 
-@inport "compass";
+@import "compass";
+@import "variables";
 
+@mixin pc-width{
+	&.Wrapper{
+		.Header{
+			width:$pc-contents-width;
+			margin:auto;
+			@include clearfix;
+			.brand{
+				@include clearfix;
+				display:block;
+				.logo{
+					display:block;
+					width:198px;
+					height:40px;
+					float:left;
+				}
+				.head_text{
+					display:block;
+					width:300px;
+					height:60px;
+					background:brown;
+					float:right;
+				}
+				.nav li{
+					width:230px;
+					margin-right:10px;
+					//head_nav
+					&.li4{
+							margin-right:0;
+					}
+				}
+			}
+		}
+		.Contents{
+			width:$pc-contents-width;
+			margin:auto;
+			@include clearfix;
+			.ContentHeader{
+				clear: both;
+			}
+			.ContentBody{
+				.MainContent{
+					float: left;
+					width:630px;
+					.content_header{
+					}
+					.content_body{
+					}
+					.content_footer{
+					}
+				}
+				.SubContent{
+					float: left;
+					width:300px;
+				}
+				
+			}
+			.ContentFooter{
+			}
+		}
+		.Footer{
+			width:$pc-contents-width;
+			margin:auto;
+			@include clearfix;
+
+			.footer_wrap{
+				margin:20px auto;
+			}
+		}
+	}
+}
+
+@mixin tablet-width{
+	&.Wrapper{
+		.Header{
+			width:$tablet-contents-width;
+			margin:auto;
+			.brand{
+				@include clearfix;
+				display:block;
+				.logo{
+					display:block;
+					width:198px;
+					height:40px;
+					float:left;
+				}
+				.head_text{
+					display:block;
+					width:300px;
+					height:60px;
+					background:brown;
+					float:right;
+				}
+				.nav li{
+					width:175px;
+					margin-right:10px;
+					//head_nav
+					&.li4{
+							margin-right:0;
+					}
+				}
+			}
+		}
+		.Contents{
+			width:$tablet-contents-width;
+			margin:auto;
+			.ContentHeader{
+			}
+			.ContentBody{
+				.MainContent{
+					.content_header{
+					}
+					.content_body{
+					}
+					.content_footer{
+					}
+				}
+				.SubContent{
+				}
+				
+			}
+			.ContentFooter{
+			}
+		}
+		.Footer{
+			width:$tablet-contents-width;
+			margin:auto;
+
+			.footer_wrap{
+				margin: 20px auto;
+			}
+		}
+	}
+}
+
+@media screen and(min-width:$pc-width){
+	.Wrapper{
+		@include pc-width;
+	}
+}
+/*tablet display*/
+@media (min-width:$tablet-width) and (max-width:($pc-width - 1)){
+	.Wrapper{
+		@include tablet-width;
+	}
+}
+/*sp horizontal display*/
+
+@media  (min-width:$sp-width) and (max-width:($tablet-width - 1)){
+}
+
+/*sp width*/
+
+@media  (max-width:$sp-width){
+}
