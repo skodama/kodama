@@ -198,19 +198,19 @@
 	background:#f9f9f9;
 	border-top:5px solid #fd7700;
 	@include box-shadow(rgba(0,0,0,0.3) 0 8px 8px);
-}
-.Header:after{
-	display:block;
-	content:".";
-	text-indent:-9999em;
-	height:10px;
-	width:100%;
-	background:url(../img/header_bottom.gif) repeat-x left bottom;
-	@include background-size(320px,10px);
-	//background:red;
-	position:absolute;
-	left:0;
-	bottom:-10px;
+	&:after{
+		display:block;
+		content:".";
+		text-indent:-9999em;
+		height:10px;
+		width:100%;
+		background:url(../img/header_bottom.gif) repeat-x left bottom;
+		@include background-size(320px,10px);
+		//background:red;
+		position:absolute;
+		left:0;
+		bottom:-10px;
+	}
 }
 
 .Header .Header_wrap{
@@ -219,31 +219,33 @@
 
 .Header .brand{
 	margin-bottom:10px;
-}
 
-.Header .brand .logo{
-	display:block;
-	width:250px;
-	height:51px;
-	background:url(../img/logo_l_orange.png) no-repeat 0 0;
-	background-size:250px 51px;
+	.logo {
+		display:block;
+		width:250px;
+		height:51px;
+		background:url(../img/logo_l_orange.png) no-repeat 0 0;
+		background-size:250px 51px;
+		text-indent:-9999em;
+	}
 
-	text-indent:-9999em;
-}
-.Header .brand h1{
-	line-height:0;
-	font-size:0px;
-	margin:0;
-}
-.Header .brand .logo:hover{
-	@include opacity(0.8);
-}
+	h1{
+		line-height:0;
+		font-size:0px;
+		margin:0;
+		&:hover{
+			@include opacity(0.8);
+		}
+	}
 
-.Header .head_text{
+.head_text{
 	display:block;
 	margin:0;
 	background:#f0d3b9;
 }
+	
+}
+
 
 
 /*nav*/
@@ -263,7 +265,7 @@
 
 .Header .nav li a{
 	background:#ece4db;
-	@include border-radius(10px);
+	@contentsinclude border-radius(10px);
 	height:50px;
 	color:#593a26;
 	line-height:50px;

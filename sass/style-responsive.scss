@@ -6,69 +6,70 @@
 @mixin pc-width{
 	&.Wrapper{
 		.Header{
-			width:$pc-contents-width;
-			margin:auto;
-			@include clearfix;
-			.brand{
+			.Headerwrap{
+				width:$pc-contents-width;
+				margin:auto;
 				@include clearfix;
-				display:block;
-				.logo{
+				.brand{
+					@include clearfix;
 					display:block;
-					width:198px;
-					height:40px;
-					float:left;
-				}
-				.head_text{
-					display:block;
-					width:300px;
-					height:60px;
-					background:brown;
-					float:right;
-				}
-				.nav li{
-					width:230px;
-					margin-right:10px;
-					//head_nav
-					&.li4{
+					.logo{
+						display:block;
+						width:198px;
+						height:40px;
+						float:left;
+					}
+					.head_text{
+						display:block;
+						width:300px;
+						height:60px;
+						background:brown;
+						float:right;
+					}
+					.nav li{
+						width:230px;
+						margin-right:10px;
+						//head_nav
+						&.li4{
 							margin-right:0;
+						}
 					}
 				}
 			}
 		}
 		.Contents{
-			width:$pc-contents-width;
-			margin:auto;
-			@include clearfix;
-			.ContentHeader{
-				clear: both;
-			}
-			.ContentBody{
-				.MainContent{
-					float: left;
-					width:630px;
-					.content_header{
+			.Contentswrap{
+				width:$pc-contents-width;
+				margin:auto;
+				@include clearfix;
+				.ContentHeader{
+					clear: both;
+				}
+				.ContentBody{
+					.MainContent{
+						float: left;
+						width:630px;
+						.content_header{
+						}
+						.content_body{
+						}
+						.content_footer{
+						}
 					}
-					.content_body{
-					}
-					.content_footer{
+					.SubContent{
+						float: left;
+						width:300px;
 					}
 				}
-				.SubContent{
-					float: left;
-					width:300px;
+				.ContentFooter{
 				}
-				
-			}
-			.ContentFooter{
 			}
 		}
 		.Footer{
-			width:$pc-contents-width;
-			margin:auto;
-			@include clearfix;
-
-			.footer_wrap{
+			.Footerwrap{
+				width:$pc-contents-width;
 				margin:20px auto;
+				@include clearfix;
 			}
 		}
 	}
@@ -77,60 +78,62 @@
 @mixin tablet-width{
 	&.Wrapper{
 		.Header{
-			width:$tablet-contents-width;
-			margin:auto;
-			.brand{
-				@include clearfix;
-				display:block;
-				.logo{
+			.Headerwrap{
+				width:$tablet-contents-width;
+				margin:auto;
+				.brand{
+					@include clearfix;
 					display:block;
-					width:198px;
-					height:40px;
-					float:left;
-				}
-				.head_text{
-					display:block;
-					width:300px;
-					height:60px;
-					background:brown;
-					float:right;
-				}
-				.nav li{
-					width:175px;
-					margin-right:10px;
-					//head_nav
-					&.li4{
+					.logo{
+						display:block;
+						width:198px;
+						height:40px;
+						float:left;
+					}
+					.head_text{
+						display:block;
+						width:300px;
+						height:60px;
+						background:brown;
+						float:right;
+					}
+					.nav li{
+						width:175px;
+						margin-right:10px;
+						//head_nav
+						&.li4{
 							margin-right:0;
+						}
 					}
 				}
 			}
 		}
 		.Contents{
-			width:$tablet-contents-width;
-			margin:auto;
-			.ContentHeader{
-			}
-			.ContentBody{
-				.MainContent{
-					.content_header{
-					}
-					.content_body{
-					}
-					.content_footer{
-					}
+			.Contentswrap{
+				width:$tablet-contents-width;
+				margin:auto;
+				.ContentHeader{
 				}
-				.SubContent{
+				.ContentBody{
+					.MainContent{
+						.content_header{
+						}
+						.content_body{
+						}
+						.content_footer{
+						}
+					}
+					.SubContent{
+					}
+
 				}
-				
-			}
-			.ContentFooter{
+				.ContentFooter{
+				}
 			}
 		}
 		.Footer{
-			width:$tablet-contents-width;
-			margin:auto;
-
-			.footer_wrap{
+			.Footerwrap{
+				width:$tablet-contents-width;
 				margin: 20px auto;
 			}
 		}

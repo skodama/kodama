@@ -31,23 +31,25 @@
 	<!-- .Header -->
 	<div class="Header">
 		<header>
-
-
-			<!-- brand/ -->
-			<div class="brand">
-				<h1><a class="logo" href="<?php bloginfo('url'); ?>"><?php bloginfo('title'); ?></a></h1>
-				<p class="head_text">
-				<span class="pr_text"><?php bloginfo( 'description' ); ?></span>
-				</p>
+			<!-- .Headerwrap -->
+			<div class="Headerwrap">
+				<!-- brand/ -->
+				<div class="brand">
+					<h1><a class="logo" href="<?php bloginfo('url'); ?>">
+							<?php bloginfo('title'); ?></a>
+					</h1>
+					<p class="head_text">
+					<span class="pr_text"><?php bloginfo( 'description' ); ?></span>
+					</p>
+				</div>
+				<!-- /brand -->
+				<!-- nav/ -->
+				<nav>
+					<?php wp_nav_menu(array('theme_location' => 'headermenu','menu_class' => 'nav' ,'link_before'=> '<span>', 'link_after'=> '</span>')); ?> 
+				</nav>
+				<!-- /nav -->
 			</div>
-			<!-- /brand -->
-
-			<!-- nav/ -->
-			<nav>
-				<?php wp_nav_menu(array('theme_location' => 'headermenu','menu_class' => 'nav' ,'link_before'=> '<span>', 'link_after'=> '</span>')); ?> 
-			</nav>
-			<!-- /nav -->
-
+			<!-- /.Headerwrap -->
 		</header>
 	</div>
 	<!-- /.Header -->

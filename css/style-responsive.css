@@ -2,125 +2,117 @@
 /*petseacheye variables*/
 /*320<480<768<979*/
 @media screen and (min-width: 979px) {
-  /* line 8, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header {
+  /* line 9, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap {
     width: 950px;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 12, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .brand {
+  /* line 13, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand {
     overflow: hidden;
     *zoom: 1;
     display: block;
   }
-  /* line 15, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .brand .logo {
+  /* line 16, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .logo {
     display: block;
     width: 198px;
     height: 40px;
     float: left;
   }
-  /* line 21, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .brand .head_text {
+  /* line 22, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .head_text {
     display: block;
     width: 300px;
     height: 60px;
     background: brown;
     float: right;
   }
-  /* line 28, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .brand .nav li {
+  /* line 29, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .nav li {
     width: 230px;
     margin-right: 10px;
   }
-  /* line 32, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .brand .nav li.li4 {
+  /* line 33, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .nav li.li4 {
     margin-right: 0;
   }
-  /* line 38, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Contents {
+  /* line 41, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap {
     width: 950px;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 42, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Contents .ContentHeader {
+  /* line 45, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentHeader {
     clear: both;
   }
-  /* line 46, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Contents .ContentBody .MainContent {
+  /* line 49, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .MainContent {
     float: left;
     width: 630px;
   }
-  /* line 56, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Contents .ContentBody .SubContent {
+  /* line 59, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .SubContent {
     float: left;
     width: 300px;
   }
-  /* line 65, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Footer {
+  /* line 69, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Footer .Footerwrap {
     width: 950px;
-    margin: auto;
+    margin: 20px auto;
     overflow: hidden;
     *zoom: 1;
-  }
-  /* line 70, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Footer .footer_wrap {
-    margin: 20px auto;
   }
 }
 /*tablet display*/
 @media (min-width: 768px) and (max-width: 978px) {
-  /* line 79, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header {
+  /* line 81, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap {
     width: 730px;
     margin: auto;
   }
-  /* line 82, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .brand {
+  /* line 84, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand {
     overflow: hidden;
     *zoom: 1;
     display: block;
   }
-  /* line 85, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .brand .logo {
+  /* line 87, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .logo {
     display: block;
     width: 198px;
     height: 40px;
     float: left;
   }
-  /* line 91, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .brand .head_text {
+  /* line 93, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .head_text {
     display: block;
     width: 300px;
     height: 60px;
     background: brown;
     float: right;
   }
-  /* line 98, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .brand .nav li {
+  /* line 100, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .nav li {
     width: 175px;
     margin-right: 10px;
   }
-  /* line 102, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .brand .nav li.li4 {
+  /* line 104, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .nav li.li4 {
     margin-right: 0;
   }
-  /* line 108, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Contents {
+  /* line 112, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap {
     width: 730px;
     margin: auto;
   }
-  /* line 129, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Footer {
+  /* line 135, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Footer .Footerwrap {
     width: 730px;
-    margin: auto;
-  }
-  /* line 133, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Footer .footer_wrap {
     margin: 20px auto;
   }
 }
