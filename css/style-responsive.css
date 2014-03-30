@@ -1,120 +1,323 @@
 /*petseacheye responsive style*/
 /*petseacheye variables*/
-/*320<480<768<979*/
-@media screen and (min-width: 979px) {
-  /* line 9, ../sass/style-responsive.scss */
+/*320<480<730<800*/
+@media screen and (min-width: 800px) {
+  /* line 8, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap {
-    width: 950px;
+    width: 800px;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 13, ../sass/style-responsive.scss */
+  /* line 12, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand {
     overflow: hidden;
     *zoom: 1;
     display: block;
   }
-  /* line 16, ../sass/style-responsive.scss */
+  /* line 15, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .logo {
     display: block;
-    width: 198px;
-    height: 40px;
+    width: 250px;
+    height: 50px;
     float: left;
   }
-  /* line 22, ../sass/style-responsive.scss */
+  /* line 21, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .head_text {
     display: block;
-    width: 300px;
+    font-size: 14px;
+    width: 280px;
     height: 60px;
-    background: brown;
+    padding-left: 50px;
+    background: url(../img/phone.png) no-repeat left center;
     float: right;
   }
-  /* line 29, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .Headerwrap .brand .nav li {
-    width: 230px;
-    margin-right: 10px;
-  }
-  /* line 33, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Header .Headerwrap .brand .nav li.li4 {
-    margin-right: 0;
-  }
-  /* line 41, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Contents .Contentswrap {
-    width: 950px;
+  /* line 40, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentHeader .ContentHeaderwrap {
+    width: 800px;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 45, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Contents .Contentswrap .ContentHeader {
-    clear: both;
-  }
   /* line 49, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .MainContent {
-    float: left;
-    width: 630px;
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent {
+    padding: 40px 0 40px;
   }
-  /* line 59, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .SubContent {
-    float: left;
-    width: 300px;
+  /* line 51, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap {
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+    *zoom: 1;
+    background: #fff;
   }
-  /* line 69, ../sass/style-responsive.scss */
+  /* line 57, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_header {
+    padding-top: 30px;
+    width: 600px;
+    margin: auto;
+  }
+  /* line 62, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_body {
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+  }
+  /* line 67, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_footer {
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+  }
+  /* line 76, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .SubContent .SubContentwrap {
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 85, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter {
+    border-top: 2px solid #98f77a;
+    background: #444444;
+  }
+  /* line 88, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap {
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 101, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu .sub-menu {
+    display: block;
+  }
+  /* line 110, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Footer .Footerwrap {
-    width: 950px;
-    margin: 20px auto;
+    width: 800px;
+    margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
 }
 /*tablet display*/
-@media (min-width: 768px) and (max-width: 978px) {
-  /* line 81, ../sass/style-responsive.scss */
+@media (min-width: 730px) and (max-width: 799px) {
+  /* line 122, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap {
     width: 730px;
     margin: auto;
   }
-  /* line 84, ../sass/style-responsive.scss */
+  /* line 125, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand {
     overflow: hidden;
     *zoom: 1;
     display: block;
   }
-  /* line 87, ../sass/style-responsive.scss */
+  /* line 128, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .logo {
     display: block;
-    width: 198px;
-    height: 40px;
+    width: 250px;
+    height: 50px;
     float: left;
   }
-  /* line 93, ../sass/style-responsive.scss */
+  /* line 134, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .head_text {
     display: block;
-    width: 300px;
+    font-size: 14px;
+    width: 280px;
     height: 60px;
-    background: brown;
+    padding-left: 50px;
+    background: url(../img/phone.png) no-repeat left center;
     float: right;
   }
-  /* line 100, ../sass/style-responsive.scss */
+  /* line 144, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .nav li {
     width: 175px;
     margin-right: 10px;
   }
-  /* line 104, ../sass/style-responsive.scss */
+  /* line 148, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .nav li.li4 {
     margin-right: 0;
   }
-  /* line 112, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Contents .Contentswrap {
+  /* line 158, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentHeader .ContentHeaderwrap {
+    width: 730px;
+    margin: auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 166, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent {
+    padding: 40px 0 40px;
+  }
+  /* line 168, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap {
+    width: 730px;
+    margin: auto;
+    overflow: hidden;
+    *zoom: 1;
+    background: #fff;
+  }
+  /* line 174, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_header {
+    padding-top: 30px;
+    width: 550px;
+    margin: auto;
+  }
+  /* line 179, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_body {
+    padding: 20px;
+    width: 550px;
+    margin: auto;
+  }
+  /* line 184, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_footer {
+    padding: 20px;
+    width: 550px;
+    margin: auto;
+  }
+  /* line 193, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .SubContent .SubContentwrap {
+    width: 730px;
+    margin: auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 201, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter {
+    background: #444444;
+  }
+  /* line 203, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap {
+    width: 730px;
+    margin: auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 212, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Footer .Footerwrap {
     width: 730px;
     margin: auto;
   }
-  /* line 135, ../sass/style-responsive.scss */
-  .Wrapper.Wrapper .Footer .Footerwrap {
-    width: 730px;
-    margin: 20px auto;
-  }
 }
 /*sp horizontal display*/
+@media (min-width: 480px) and (max-width: 729px) {
+  /* line 223, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap {
+    width: 100%;
+    margin: auto;
+  }
+  /* line 226, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand {
+    overflow: hidden;
+    *zoom: 1;
+    display: block;
+  }
+  /* line 229, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .logo {
+    display: block;
+    width: 250px;
+    height: 50px;
+    float: left;
+  }
+  /* line 235, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .head_text {
+    display: block;
+    font-size: 14px;
+    width: 280px;
+    height: 60px;
+    padding-left: 50px;
+    background: url(../img/phone.png) no-repeat left center;
+    float: right;
+  }
+  /* line 245, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .nav li {
+    width: 175px;
+    margin-right: 10px;
+  }
+  /* line 249, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Header .Headerwrap .brand .nav li.li4 {
+    margin-right: 0;
+  }
+  /* line 259, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentHeader .ContentHeaderwrap {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 267, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent {
+    padding: 40px 0 40px;
+  }
+  /* line 269, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    *zoom: 1;
+    background: #fff;
+  }
+  /* line 275, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_header {
+    padding-top: 30px;
+    margin: auto;
+  }
+  /* line 279, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_body {
+    padding: 20px;
+    margin: auto;
+  }
+  /* line 283, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_footer {
+    padding: 20px;
+    margin: auto;
+  }
+  /* line 291, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .SubContent .SubContentwrap {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 299, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter {
+    background: #444444;
+  }
+  /* line 301, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  /* line 305, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu {
+    font-size: 15px;
+  }
+  /* line 308, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu .menu-item a {
+    display: block;
+    padding: 10px;
+    background: #999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  }
+  /* line 314, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu .menu-item.current-menu-item {
+    background: #aaa;
+  }
+  /* line 318, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu .sub-menu {
+    display: none;
+  }
+  /* line 327, ../sass/style-responsive.scss */
+  .Wrapper.Wrapper .Footer .Footerwrap {
+    width: 100%;
+    margin: auto;
+  }
+}
 /*sp width*/

@@ -16,4 +16,18 @@ if ( function_exists('register_sidebar') )
 /* アイキャッチ画像 */
 add_theme_support( 'post-thumbnails' );
 
+//add_theme_support( 'custom-header' ,$custom_header_support );
+//
+//$custom_header_params = array(
+	//'default-image'          => get_bloginfo('template_url').'/img/wordpress-logo-hoz-rgb_small.png',
+	//'width'                  => 800,
+	//'height'                 => 300,
+	//'header-text'            => false,
+//);
+//add_theme_support( 'custom-header', $custom_header_params );
+//
+
+
+	add_theme_support( 'custom-header');
+
 ?>

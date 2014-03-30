@@ -1,8 +1,7 @@
 /*petseacheye responsive style*/
 
 @import "compass";
-@import "variables";
-
+@import "variables"; 
 @mixin pc-width{
 	&.Wrapper{
 		.Header{
@@ -15,60 +14,102 @@
 					display:block;
 					.logo{
 						display:block;
-						width:198px;
-						height:40px;
+						width:250px;
+						height:50px;
 						float:left;
 					}
 					.head_text{
 						display:block;
-						width:300px;
+						font-size:14px;
+						width:280px;
 						height:60px;
-						background:brown;
+						padding-left: 50px;
+						background: url(#{$img_path}/phone.png) no-repeat left center;
+						//background:brown;
 						float:right;
 					}
 					.nav li{
-						width:230px;
-						margin-right:10px;
 						//head_nav
-						&.li4{
-							margin-right:0;
-						}
 					}
 				}
 			}
 		}
 		.Contents{
 			.Contentswrap{
-				width:$pc-contents-width;
-				margin:auto;
-				@include clearfix;
 				.ContentHeader{
-					clear: both;
+					.ContentHeaderwrap{
+						width:$pc-contents-width;
+						margin:auto;
+						@include clearfix;
+					}
+					//clear: both;
 				}
 				.ContentBody{
-					.MainContent{
-						float: left;
-						width:630px;
-						.content_header{
+					.ContentBodywrap{
+						.MainContent{
+								padding: 40px 0 40px;
+							.MainContentwrap {
+								width:$pc-contents-width;
+								margin:auto;
+								@include clearfix;
+								background: #fff;
+
+								.content_header{
+									padding-top: 30px;
+									width:600px;
+									margin: auto ;
+								}
+								.content_body{
+								padding: 20px;
+									width:600px;
+									margin: auto ;
+								}
+								.content_footer{
+								padding: 20px;
+									width:600px;
+									margin: auto ;
+								}
+							}
+
 						}
-						.content_body{
+						.SubContent{
+							.SubContentwrap {
+								width:$pc-contents-width;
+								margin:auto;
+								@include clearfix;
+
+							}
 						}
-						.content_footer{
-						}
-					}
-					.SubContent{
-						float: left;
-						width:300px;
 					}
 				}
 				.ContentFooter{
+					border-top: 2px solid $maincolor;
+					background: $ContentFooterbg;
+					.ContentFooterwrap {
+						width:$pc-contents-width;
+						margin:auto;
+						@include clearfix;
+						.menu{
+							.menu-item{
+
+								a{
+								}
+								
+								&.current-menu-item{
+								}
+							}
+							.sub-menu{
+								display: block;
+							}
+						}
+					}
 				}
 			}
 		}
 		.Footer{
 			.Footerwrap{
 				width:$pc-contents-width;
-				margin:20px auto;
+				margin: auto;
 				@include clearfix;
 			}
 		}
@@ -86,15 +127,18 @@
 					display:block;
 					.logo{
 						display:block;
-						width:198px;
-						height:40px;
+						width:250px;
+						height:50px;
 						float:left;
 					}
 					.head_text{
 						display:block;
-						width:300px;
+						font-size:14px;
+						width:280px;
 						height:60px;
-						background:brown;
+						padding-left: 50px;
+						background: url(#{$img_path}/phone.png) no-repeat left center;
+						//background:brown;
 						float:right;
 					}
 					.nav li{
@@ -110,31 +154,179 @@
 		}
 		.Contents{
 			.Contentswrap{
-				width:$tablet-contents-width;
-				margin:auto;
 				.ContentHeader{
+					.ContentHeaderwrap{
+						width:$tablet-contents-width;
+						margin:auto;
+						@include clearfix;
+					}
+					//clear: both;
 				}
-				.ContentBody{
-					.MainContent{
-						.content_header{
-						}
-						.content_body{
-						}
-						.content_footer{
-						}
-					}
-					.SubContent{
-					}
+					.ContentBodywrap{
+						.MainContent{
+								padding: 40px 0 40px;
+							.MainContentwrap {
+								width:$tablet-contents-width;
+								margin:auto;
+								@include clearfix;
+								background: #fff;
 
-				}
+								.content_header{
+									padding-top: 30px;
+									width:550px;
+									margin: auto ;
+								}
+								.content_body{
+								padding: 20px;
+									width:550px;
+									margin: auto ;
+								}
+								.content_footer{
+								padding: 20px;
+									width:550px;
+									margin: auto ;
+								}
+							}
+
+						}
+						.SubContent{
+							.SubContentwrap {
+								width:$tablet-contents-width;
+								margin:auto;
+								@include clearfix;
+
+							}
+						}
+					}
 				.ContentFooter{
+					background: $ContentFooterbg;
+					.ContentFooterwrap {
+								width:$tablet-contents-width;
+								margin:auto;
+								@include clearfix;
+					}
 				}
 			}
 		}
 		.Footer{
 			.Footerwrap{
 				width:$tablet-contents-width;
-				margin: 20px auto;
+				margin:auto;
+			}
+		}
+	}
+}
+
+@mixin sp-width{
+	&.Wrapper{
+		.Header{
+			.Headerwrap{
+				width:$sp-contents-width;
+				margin:auto;
+				.brand{
+					@include clearfix;
+					display:block;
+					.logo{
+						display:block;
+						width:250px;
+						height:50px;
+						float:left;
+					}
+					.head_text{
+						display:block;
+						font-size:14px;
+						width:280px;
+						height:60px;
+						padding-left: 50px;
+						background: url(#{$img_path}/phone.png) no-repeat left center;
+						//background:brown;
+						float:right;
+					}
+					.nav li{
+						width:175px;
+						margin-right:10px;
+						//head_nav
+						&.li4{
+							margin-right:0;
+						}
+					}
+				}
+			}
+		}
+		.Contents{
+			.Contentswrap{
+				.ContentHeader{
+					.ContentHeaderwrap{
+						width:$sp-contents-width;
+						margin:auto;
+						@include clearfix;
+					}
+					//clear: both;
+				}
+					.ContentBodywrap{
+						.MainContent{
+								padding: 40px 0 40px;
+							.MainContentwrap {
+								width:$sp-contents-width;
+								margin:auto;
+								@include clearfix;
+								background: #fff;
+
+								.content_header{
+									padding-top: 30px;
+									margin: auto ;
+								}
+								.content_body{
+									padding: 20px;
+									margin: auto ;
+								}
+								.content_footer{
+									padding: 20px;
+									margin: auto ;
+								}
+							}
+
+						}
+						.SubContent{
+							.SubContentwrap {
+								width:$sp-contents-width;
+								margin:auto;
+								@include clearfix;
+
+							}
+						}
+					}
+				.ContentFooter{
+					background: $ContentFooterbg;
+					.ContentFooterwrap {
+						width:$sp-contents-width;
+						margin:auto;
+						@include clearfix;
+						.menu{
+							font-size: 15px;
+							.menu-item{
+								a{
+									display: block;
+									padding: 10px;
+									background: #999;
+									@include border-radius(5px);
+								}
+								&.current-menu-item{
+									background: #aaa;
+								}
+							}
+							.sub-menu{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		.Footer{
+			.Footerwrap{
+				width:$sp-contents-width;
+				margin:auto;
 			}
 		}
 	}
@@ -154,6 +346,9 @@
 /*sp horizontal display*/
 
 @media  (min-width:$sp-width) and (max-width:($tablet-width - 1)){
+	.Wrapper{
+		@include sp-width;
+	}
 }
 
 /*sp width*/

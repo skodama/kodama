@@ -6,6 +6,6 @@
 </div>
 <!-- nav/ -->
 <nav>
-	<?php // wp_nav_menu(array('theme_location' => 'submenu' ,'menu_class' => 'nav' )); ?> 
+	<?php wp_nav_menu(array('theme_location' => 'submenu' ,'menu_class' => 'nav' )); ?> 
 </nav>
 <!-- /nav -->

@@ -1,13 +1,28 @@
 @charset "utf-8";
 /*petseacheye variables*/
 
-/*320<480<768<979*/
-$pc-width:979px;
-$tablet-width:768px;
+/*320<480<730<800*/
+$pc-width:800px;
+$tablet-width:730px;
 $sp-width:480px;
-$sp-v-width:480px;
+$sp-v-width:320px;
 
-$pc-contents-width:950px;
+$pc-contents-width:800px;
 $tablet-contents-width:730px;
+$sp-contents-width:100%;
+//img
+$img_path:"../img";
+
+//colors
+$maincolor:#98f77a;
+$subcolor:red;
+
+$Headerbg:#232323;
+$Contentsbg:#333;
+$Footerbg:#3c3c3c;
 
 
+$ContentFooterbg:#555;
+
+$MainContentbg:#f2f2f2;
+$SubContentbg:#ebebeb;
