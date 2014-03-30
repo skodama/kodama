@@ -15,6 +15,7 @@ if ( function_exists('register_sidebar') )
   ) );
 /* アイキャッチ画像 */
 add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size(600, 600);
 
 //add_theme_support( 'custom-header' ,$custom_header_support );
 //

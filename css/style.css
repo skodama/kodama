@@ -73,30 +73,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
   line-height: 1.8;
+  color: #333;
 }
 
 @media screen and (min-width: 480px) {
-  /* line 12, ../sass/_base.scss */
+  /* line 13, ../sass/_base.scss */
   body {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 480px -1) {
-  /* line 18, ../sass/_base.scss */
+  /* line 19, ../sass/_base.scss */
   body {
     font-size: 16px;
   }
 }
-/* line 22, ../sass/_base.scss */
+/* line 23, ../sass/_base.scss */
 a {
   color: #0081cc;
   text-decoration: none;
 }
-/* line 25, ../sass/_base.scss */
+/* line 26, ../sass/_base.scss */
 a:visited {
   color: #0061aa;
 }
-/* line 28, ../sass/_base.scss */
+/* line 29, ../sass/_base.scss */
 a:hover {
   text-decoration: underline;
 }
@@ -153,49 +154,53 @@ a:hover {
     overflow: hidden;
     *zoom: 1;
     background: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
   }
-  /* line 57, ../sass/style-responsive.scss */
+  /* line 59, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_header {
-    padding-top: 30px;
+    padding-top: 60px;
     width: 600px;
     margin: auto;
   }
-  /* line 62, ../sass/style-responsive.scss */
+  /* line 64, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_body {
     padding: 20px;
     width: 600px;
     margin: auto;
   }
-  /* line 67, ../sass/style-responsive.scss */
+  /* line 69, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_footer {
     padding: 20px;
     width: 600px;
     margin: auto;
   }
-  /* line 76, ../sass/style-responsive.scss */
+  /* line 78, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .SubContent .SubContentwrap {
     width: 800px;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 85, ../sass/style-responsive.scss */
+  /* line 87, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter {
-    border-top: 2px solid #98f77a;
+    border-top: 2px solid #8dc75a;
     background: #444444;
   }
-  /* line 88, ../sass/style-responsive.scss */
+  /* line 90, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap {
     width: 800px;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 101, ../sass/style-responsive.scss */
+  /* line 103, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu .sub-menu {
     display: block;
   }
-  /* line 110, ../sass/style-responsive.scss */
+  /* line 112, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Footer .Footerwrap {
     width: 800px;
     margin: auto;
@@ -205,25 +210,25 @@ a:hover {
 }
 /*tablet display*/
 @media (min-width: 730px) and (max-width: 799px) {
-  /* line 122, ../sass/style-responsive.scss */
+  /* line 124, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap {
     width: 730px;
     margin: auto;
   }
-  /* line 125, ../sass/style-responsive.scss */
+  /* line 127, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand {
     overflow: hidden;
     *zoom: 1;
     display: block;
   }
-  /* line 128, ../sass/style-responsive.scss */
+  /* line 130, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .logo {
     display: block;
     width: 250px;
     height: 50px;
     float: left;
   }
-  /* line 134, ../sass/style-responsive.scss */
+  /* line 136, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .head_text {
     display: block;
     font-size: 14px;
@@ -233,27 +238,27 @@ a:hover {
     background: url(../img/phone.png) no-repeat left center;
     float: right;
   }
-  /* line 144, ../sass/style-responsive.scss */
+  /* line 146, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .nav li {
     width: 175px;
     margin-right: 10px;
   }
-  /* line 148, ../sass/style-responsive.scss */
+  /* line 150, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .nav li.li4 {
     margin-right: 0;
   }
-  /* line 158, ../sass/style-responsive.scss */
+  /* line 160, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentHeader .ContentHeaderwrap {
     width: 730px;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 166, ../sass/style-responsive.scss */
+  /* line 168, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent {
     padding: 40px 0 40px;
   }
-  /* line 168, ../sass/style-responsive.scss */
+  /* line 170, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap {
     width: 730px;
     margin: auto;
@@ -261,43 +266,43 @@ a:hover {
     *zoom: 1;
     background: #fff;
   }
-  /* line 174, ../sass/style-responsive.scss */
+  /* line 176, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_header {
     padding-top: 30px;
     width: 550px;
     margin: auto;
   }
-  /* line 179, ../sass/style-responsive.scss */
+  /* line 181, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_body {
     padding: 20px;
     width: 550px;
     margin: auto;
   }
-  /* line 184, ../sass/style-responsive.scss */
+  /* line 186, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_footer {
     padding: 20px;
     width: 550px;
     margin: auto;
   }
-  /* line 193, ../sass/style-responsive.scss */
+  /* line 195, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .SubContent .SubContentwrap {
     width: 730px;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 201, ../sass/style-responsive.scss */
+  /* line 203, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter {
     background: #444444;
   }
-  /* line 203, ../sass/style-responsive.scss */
+  /* line 205, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap {
     width: 730px;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 212, ../sass/style-responsive.scss */
+  /* line 214, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Footer .Footerwrap {
     width: 730px;
     margin: auto;
@@ -305,25 +310,25 @@ a:hover {
 }
 /*sp horizontal display*/
 @media (min-width: 480px) and (max-width: 729px) {
-  /* line 223, ../sass/style-responsive.scss */
+  /* line 225, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap {
     width: 100%;
     margin: auto;
   }
-  /* line 226, ../sass/style-responsive.scss */
+  /* line 228, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand {
     overflow: hidden;
     *zoom: 1;
     display: block;
   }
-  /* line 229, ../sass/style-responsive.scss */
+  /* line 231, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .logo {
     display: block;
     width: 250px;
     height: 50px;
     float: left;
   }
-  /* line 235, ../sass/style-responsive.scss */
+  /* line 237, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .head_text {
     display: block;
     font-size: 14px;
@@ -333,27 +338,27 @@ a:hover {
     background: url(../img/phone.png) no-repeat left center;
     float: right;
   }
-  /* line 245, ../sass/style-responsive.scss */
+  /* line 247, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .nav li {
     width: 175px;
     margin-right: 10px;
   }
-  /* line 249, ../sass/style-responsive.scss */
+  /* line 251, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Header .Headerwrap .brand .nav li.li4 {
     margin-right: 0;
   }
-  /* line 259, ../sass/style-responsive.scss */
+  /* line 261, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentHeader .ContentHeaderwrap {
     width: 100%;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 267, ../sass/style-responsive.scss */
+  /* line 269, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent {
     padding: 40px 0 40px;
   }
-  /* line 269, ../sass/style-responsive.scss */
+  /* line 271, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap {
     width: 100%;
     margin: auto;
@@ -361,44 +366,44 @@ a:hover {
     *zoom: 1;
     background: #fff;
   }
-  /* line 275, ../sass/style-responsive.scss */
+  /* line 277, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_header {
     padding-top: 30px;
     margin: auto;
   }
-  /* line 279, ../sass/style-responsive.scss */
+  /* line 281, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_body {
     padding: 20px;
     margin: auto;
   }
-  /* line 283, ../sass/style-responsive.scss */
+  /* line 285, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .MainContent .MainContentwrap .content_footer {
     padding: 20px;
     margin: auto;
   }
-  /* line 291, ../sass/style-responsive.scss */
+  /* line 293, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentBodywrap .SubContent .SubContentwrap {
     width: 100%;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 299, ../sass/style-responsive.scss */
+  /* line 301, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter {
     background: #444444;
   }
-  /* line 301, ../sass/style-responsive.scss */
+  /* line 303, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap {
     width: 100%;
     margin: auto;
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 305, ../sass/style-responsive.scss */
+  /* line 307, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu {
     font-size: 15px;
   }
-  /* line 308, ../sass/style-responsive.scss */
+  /* line 310, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu .menu-item a {
     display: block;
     padding: 10px;
@@ -409,15 +414,15 @@ a:hover {
     -o-border-radius: 5px;
     border-radius: 5px;
   }
-  /* line 314, ../sass/style-responsive.scss */
+  /* line 316, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu .menu-item.current-menu-item {
     background: #aaa;
   }
-  /* line 318, ../sass/style-responsive.scss */
+  /* line 320, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu .sub-menu {
     display: none;
   }
-  /* line 327, ../sass/style-responsive.scss */
+  /* line 329, ../sass/style-responsive.scss */
   .Wrapper.Wrapper .Footer .Footerwrap {
     width: 100%;
     margin: auto;
@@ -469,11 +474,11 @@ a:hover {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 35, ../sass/_base.scss */
+/* line 36, ../sass/_base.scss */
 .Wrapper .Header .Headerwrap .menu-headermenu-container a:visited {
   color: #eee;
 }
-/* line 38, ../sass/_base.scss */
+/* line 39, ../sass/_base.scss */
 .Wrapper .Header .Headerwrap .menu-headermenu-container a:hover {
   color: #0081cc;
 }
@@ -494,8 +499,8 @@ a:hover {
 }
 /* line 52, ../sass/style.scss */
 .Wrapper .Header .Headerwrap .menu-headermenu-container .nav li.current_page_item a {
-  color: #98f77a;
-  border-bottom: 3px solid #98f77a;
+  color: #8dc75a;
+  border-bottom: 3px solid #8dc75a;
 }
 /* line 62, ../sass/style.scss */
 .Wrapper .Contents {
@@ -508,53 +513,116 @@ a:hover {
 /* line 67, ../sass/style.scss */
 .Wrapper .Contents .Contentswrap .ContentHeader .ContentHeaderwrap {
   color: #fff;
-  height: 300px;
 }
-/* line 74, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentHeader .ContentHeaderwrap .wrap {
+  padding: 40px 10px 40px;
+}
+/* line 72, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentHeader .ContentHeaderwrap .wrap .head_label {
+  font-size: 120%;
+  text-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+}
+/* line 76, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentHeader .ContentHeaderwrap .wrap .head_text {
+  font-size: 80%;
+  text-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+}
+/* line 86, ../sass/style.scss */
 .Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent {
   background: #f2f2f2;
 }
-/* line 87, ../sass/style.scss */
-.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .SubContent {
-  background: #ebebeb;
+/* line 91, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_header .title {
+  font-size: 110%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  font-weight: bold;
 }
-/* line 98, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_header .title a {
+  color: #333;
+}
+/* line 99, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_header .title a:hover {
+  color: #555;
+}
+/* line 104, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_header .blog_info {
+  color: #999;
+  font-size: 70%;
+}
+/* line 110, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_body p {
+  margin-bottom: 0.8em;
+}
+/* line 113, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_body .thumbnail {
+  background: pink;
+  margin: auto;
+  width: 90%;
+}
+/* line 118, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .MainContent .MainContentwrap .content_body .thumbnail img {
+  width: 100%;
+  height: auto;
+}
+/* line 129, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .SubContent {
+  background: #8dc75a;
+}
+/* line 132, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .SubContent .SubContentwrap .pr_block {
+  padding: 10px 0;
+}
+/* line 134, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .SubContent .SubContentwrap .pr_block .label {
+  background: url(../img/phone.png) no-repeat left center;
+  padding-left: 50px;
+  font-weight: bold;
+}
+/* line 140, ../sass/style.scss */
+.Wrapper .Contents .Contentswrap .ContentBody .ContentBodywrap .SubContent .SubContentwrap .pr_block .sub {
+  font-size: 14px;
+  color: #666;
+}
+/* line 154, ../sass/style.scss */
 .Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu {
   padding: 20px;
   font-size: 16px;
 }
-/* line 107, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .Wrapper .Contents .Contentswrap .ContentFooter .ContentFooterwrap .menu .sub-menu {
   font-size: 14px;
   padding-left: 10px;
 }
-/* line 116, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .Wrapper .Footer {
-  background: #3c3c3c;
+  background: #2c2c2c;
 }
-/* line 120, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .Wrapper .Footer .Footerwrap .footer_links .menu {
   text-align: center;
 }
-/* line 122, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .Wrapper .Footer .Footerwrap .footer_links .menu li {
   display: inline-block;
 }
-/* line 124, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .Wrapper .Footer .Footerwrap .footer_links .menu li a {
   color: #fff;
   font-size: 14px;
   padding: 10px;
 }
-/* line 35, ../sass/_base.scss */
+/* line 36, ../sass/_base.scss */
 .Wrapper .Footer .Footerwrap .footer_links .menu li a:visited {
   color: #eee;
 }
-/* line 38, ../sass/_base.scss */
+/* line 39, ../sass/_base.scss */
 .Wrapper .Footer .Footerwrap .footer_links .menu li a:hover {
   color: #0081cc;
 }
-/* line 134, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .Wrapper .Footer .Footerwrap .logo_wrap a {
   background: url(../img/logo_l.png) no-repeat center center;
   -webkit-background-size: 250px 50px;
@@ -567,35 +635,38 @@ a:hover {
   width: 250px;
   height: 50px;
 }
-/* line 145, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .Wrapper .Footer .Footerwrap .address {
   width: 60%;
   margin: auto;
   font-size: 15px;
-  color: #333;
+  color: #999;
 }
-/* line 150, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .Wrapper .Footer .Footerwrap .address a {
-  color: #fff;
+  color: #aaa;
+  text-decoration: underline;
 }
-/* line 154, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .Wrapper .Footer .Footerwrap .com_info {
   width: 60%;
   margin: auto;
   font-size: 15px;
-  color: #333;
+  color: #999;
 }
-/* line 159, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .Wrapper .Footer .Footerwrap .com_info a {
-  color: #fff;
+  color: #aaa;
+  text-decoration: underline;
 }
-/* line 163, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .Wrapper .Footer .Footerwrap .copyright {
   text-align: center;
-  color: #333;
+  color: #999;
   font-size: 14px;
 }
-/* line 166, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .Wrapper .Footer .Footerwrap .copyright a {
-  color: #fff;
+  color: #aaa;
+  text-decoration: underline;
 }

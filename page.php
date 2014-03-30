@@ -5,7 +5,22 @@
 	<div class="Contentswrap">
 		<!-- .ContentHeader -->
 		<div class="ContentHeader">
-			<?php if (get_post_meta($post->ID,'head_img' ,true)) : ?>
+			<?php if (get_post_meta($post->ID,'head_label' ,true)) : ?>
+			<style type="text/css">
+<!--
+.ContentHeader{
+ <?php 
+ $key= get_post_meta($post->ID,'head_img' ,true);
+	$image = wp_get_attachment_image_src($key, 'full'); 
+	//echo $image[0];
+	//echo " <img src='$image[0]' alt=''> "
+	echo " background:url($image[0]) no-repeat center center !important; "
+ ?>
+}
+-->
+			</style>
+
+
 			<!-- .ContentHeaderwrap -->
 			<div class="ContentHeaderwrap">
 				<?php get_header('contents-head'); ?>
@@ -43,7 +58,12 @@
 					<!-- /.content_header -->
 					<!-- .content_body -->
 					<div class="content_body">
-							<?php if(has_post_thumbnail()) { echo the_post_thumbnail(); } ?>
+							<?php if(has_post_thumbnail()) :  ?>
+							<div class="thumbnail">
+								<?php echo the_post_thumbnail(); ?>
+							</div>
+							<?php endif; ?>
+
 							<?php the_content('続きを読む'); ?>
 					</div>
 					<!-- /.content_body -->

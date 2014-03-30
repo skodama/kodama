@@ -53,9 +53,11 @@
 								margin:auto;
 								@include clearfix;
 								background: #fff;
+								background: rgba(255,255,255,0.8);
+								@include box-shadow(rgba(0,0,0,0.1) 0 2px 4px);
 
 								.content_header{
-									padding-top: 30px;
+									padding-top: 60px;
 									width:600px;
 									margin: auto ;
 								}

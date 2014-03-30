@@ -66,7 +66,19 @@
 				background: url(#{$img_path}/headimg.jpg) no-repeat center center;
 				.ContentHeaderwrap{
 					color:#fff;
-					height:300px;
+					.wrap{
+						padding: 40px 10px 40px ;
+
+						.head_label{
+							font-size: 120%;
+							@include text-shadow(rgba(0,0,0,0.8) 0 0 10px);
+						}
+						.head_text{
+							font-size: 80%;
+							@include text-shadow(rgba(0,0,0,0.8) 0 0 10px);
+
+						}
+					}
 				}
 			}
 			.ContentBody{
@@ -76,8 +88,38 @@
 						.MainContentwrap {
 
 							.content_header{
+								.title{
+									font-size: 110%;
+									padding-bottom: 10px;
+									border-bottom: 2px solid #ccc;
+									font-weight: bold;
+
+									a{
+										color:#333;
+										&:hover{
+											color:#555;
+										}
+									}
+								}
+								.blog_info{
+									color:#999;
+									font-size: 70%;
+								}
 							}
 							.content_body{
+								p{
+									margin-bottom: 0.8em;
+								}
+								.thumbnail{
+									background: pink;
+									margin: auto;
+									width:90%;
+									
+									img{
+										width:100%;
+										height:auto;
+									}
+								}
 							}
 							.content_footer{
 							}
@@ -87,6 +129,20 @@
 					.SubContent{
 						background: $SubContentbg;
 						.SubContentwrap {
+							.pr_block{
+								padding: 10px 0;
+								.label{
+						background: url(#{$img_path}/phone.png) no-repeat left center;
+									padding-left: 50px;
+									font-weight: bold;
+									
+								}
+								.sub{
+									font-size: 14px;
+									color:#666;
+								}
+								.detail{}
+							}
 
 						}
 
@@ -146,25 +202,28 @@
 				width:60%;
 				margin: auto;
 				font-size: 15px;
-				color:#333;
+				color:#999;
 				a{
-					color:#fff;
+					color:#aaa;
+					text-decoration: underline;
 				}
 			}
 			.com_info{
 				width:60%;
 				margin: auto;
 				font-size: 15px;
-				color:#333;
+				color:#999;
 				a{
-					color:#fff;
+					color:#aaa;
+					text-decoration: underline;
 				}
 			}
 			.copyright{
 				text-align: center;
-				color:#333;
+				color:#999;
 				a{
-					color:#fff;
+					color:#aaa;
+					text-decoration: underline;
 				}
 				font-size: 14px;
 			}
